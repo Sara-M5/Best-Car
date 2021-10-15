@@ -1,0 +1,25 @@
+.gallery-img {
+    width: 400px;
+    height: 200px;
+    
+}
+
+.gallery-text {
+    text-decoration: underline;
+    text-shadow: 0 0 2px #000;
+    font-size: 34px;
+    text-transform: capitalize;
+    font-family: Arial, sans-serif;
+    letter-spacing: 2px;
+}
+
+ 
+.btn:hover {
+    box-shadow: 1px 2px 2px #000;
+}
+.g-icon {
+    border-radius: 4px;
+    background: #fde719;
+    color: #000;
+    margin-left: 5px;
+}
