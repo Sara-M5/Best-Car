@@ -16,7 +16,7 @@ export default function Navbar() {
   };
   window.addEventListener('scroll',changeBackground);
     return (
-      <nav className="">
+      <nav className={navbar ? 'navbar active' : 'navbar'}>
       <div className="container d-flex justify-content-between align-items-center">
         <Link className="navbar-brand navbar-logo" to="/" exact>
           <h4>Best Car</h4>
