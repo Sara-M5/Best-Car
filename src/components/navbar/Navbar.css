@@ -1,0 +1,13 @@
+.navbar{
+    background: transparent;
+    height: 80px;
+}
+
+.navbar.active{
+    background: #fbef2f;
+    height: 70px;
+    font-size: 1.2rem;
+    top:0;
+    position: sticky;
+    z-index: 1;
+}

@@ -1,11 +1,16 @@
 import './App.css';
 import Home from './views/Home';
+import Service from './parts/services/Services';
 import Navbar from './components/navbar/Navbar';
 import {
   BrowserRouter as Router,
   Route,
   Switch,
 } from 'react-router-dom';
+import TypesOfCar from './parts/typesOfCar/TypesOfCar';
+import Gallery from './components/gallery/Gallery';
+import WhyUs from './parts/whyUs/WhyUs';
+import Contact from './parts/contact/Contact';
 
 
 function App() {
@@ -16,10 +21,23 @@ function App() {
   
      <Switch>
        
-        <Route path='/home' >
+        <Route path='/' >
             <Home />
         </Route>
-
+        <Route path='/typesOfCar' >
+            <TypesOfCar />
+        </Route>
+       
+        <Route exact path='/service' component={Service} />
+        <Route path='/Gallery' >
+            <Gallery />
+        </Route>
+        <Route path='/WhyUs' >
+            <WhyUs />
+        </Route>
+         <Route path='/Contact' >
+            <Contact />
+        </Route>
      </Switch>
      </main>
    </Router>

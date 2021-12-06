@@ -26,7 +26,7 @@ export default function Home() {
             </div>
             <div className="container">
 
-               <div className="section">
+               <div className="section" id="typesOfCar">
                   <Header title="Types Of car" />
                   <TypesOfCar />
                </div>
@@ -36,30 +36,33 @@ export default function Home() {
                   <Cards />
                </div>
 
-                <div className="section">
+                <div className="section" id="Service">
                   <Header title="Services" />
                   <Services />
                </div>
 
                
-               <div className="section">
+               <div className="section" >
                <Header title="Gallery" />
-                   <Gallerys gallery={carState.gallery}/>
+               <div id="Gallery">
+                   <Gallerys gallery={carState.gallery} />
                </div>
-
-               <div className="section">
+               </div>
+               <div className="section mt-5" id="WhyUs">
                <Header title="why us" />
                   <WhyUs />
                </div>
                </div>
 
-               <div className="contact">
-                    <img  className="c-img" src="img/contact.jpg"/>
+               <div className="contact" id="Contact">
                     <Header title="contact us" />
+                     <img  className="c-img" src="img/20211202_174716.png"/>
                     <Contact /> 
                </div>
+             
             <div className="footer text-center">
-                <p className="text p-3 mb-0">Design by @ Sara Mahmoodi</p>
+              
+                <p className="text p-2 my-0">Design by @ Sara Mahmoodi</p>
             </div>
            
         </div>

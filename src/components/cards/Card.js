@@ -6,7 +6,7 @@ function Card(props) {
     
             <div className="card">
                 <div className="wrapper">
-                    <div className="card_img" style={{background:"red"}}>
+                    <div className="card_img" style={{background:"#fde719"}}>
                          <img className="img" src={props.image} alt="car" />
                     </div>
                     <div className="card-body p-4">    

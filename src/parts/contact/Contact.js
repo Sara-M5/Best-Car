@@ -3,9 +3,11 @@ import  { NavLink }  from 'react-router-dom';
 
 function Contact() {
     return (
-        <div className="container">
+        <div>
             
-            <div className="row">
+           
+            <div className="container">
+            <div className="row ">
            
             <div className="col-sm-6">
             <form className="form">
@@ -21,7 +23,8 @@ function Contact() {
                   <NavLink to="/" className="nav-link d-flex contact-icon"><i className="icon  fas fa-phone"></i><span className="text-dark">+ 18342765</span></NavLink>
                   <NavLink to="/" className="nav-link d-flex contact-icon"><i className="icon fa fa-map-marker"></i><span className="text-dark">kabul, Afghanistan</span></NavLink>
             </div>
-            </div>  
+            </div> 
+            </div> 
         </div>
     )
 }

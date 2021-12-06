@@ -1,15 +1,26 @@
-import React, {useState} from 'react';
-import { NavLink } from "react-router-dom";
+import React, {useState, useEffect} from 'react';
+import { HashLink as Link } from "react-router-hash-link";
+import './Navbar.css';
 
 
 
 export default function Navbar() {
+  const [navbar, setNavbar] = useState(false);
+
+  const changeBackground = () => {
+    if(window.scrollY >= 80){
+      setNavbar(true);
+    }else{
+      setNavbar(false);
+    }
+  };
+  window.addEventListener('scroll',changeBackground);
     return (
-      <nav className="navbar fixed-top navbar-expand-sm navbar-light m-auto mb-3">
+      <nav className="">
       <div className="container d-flex justify-content-between align-items-center">
-        <NavLink className="navbar-brand navbar-logo" to="/" exact>
+        <Link className="navbar-brand navbar-logo" to="/" exact>
           <h4>Best Car</h4>
-        </NavLink>
+        </Link>
 
         <button
           className="navbar-toggler btn0"
@@ -26,49 +37,51 @@ export default function Navbar() {
           id="navbarSuportedContent"
         >
           <ul className="navbar-nav text-center">
-            <li className="nav-item active ">
-              <NavLink className="nav-link" to="/Home" exact>
+            <li className="nav-item active">
+             
+              <Link className="nav-link" smooth to="/Home" exact>
                 Home
-              </NavLink>
+              </Link>
+
             </li>
             <li className="nav-item ">
-              <NavLink className="nav-link" to="/typesOfCar" exact>
+              <Link className="nav-link" to="#typesOfCar" exact>
                 Types Of Car
-              </NavLink>
+              </Link>
             </li>
             <li className="nav-item ">
-              <NavLink className="nav-link" to="/services" exact>
+              <Link className="nav-link" to="#Service" exact>
                 Services
-              </NavLink>
+              </Link>
             </li>
             <li className="nav-item ">
-              <NavLink className="nav-link" to="/gallery" exact>
+              <Link className="nav-link" to="#Gallery" exact>
                 Gallery
-              </NavLink>
+              </Link>
             </li>
             <li className="nav-item ">
-              <NavLink className="nav-link" to="/why Us" exact>
+              <Link className="nav-link" to="#WhyUs" exact>
                 Why Us
-              </NavLink>
+              </Link>
             </li>
             <li className="nav-item ">
-              <NavLink className="nav-link" to="/Contact" exact>
+              <Link className="nav-link" to="#Contact" exact>
                 Contact
-              </NavLink>
+              </Link>
             </li>
           </ul>
           <div className="col-xl-2 mx-5">
         <div className="header-btn d-xl-block">
           <ul className="navbar-nav">
             <li className="nav-item "> 
-            <NavLink  to="/login" className="nav-link" exact>
+            <Link  to="/login" className="nav-link" exact>
              Login
-             </NavLink>
+             </Link>
              </li>
              <li className="nav-item "> 
-            <NavLink  to="/sign-up" className="nav-link" exact>
+            <Link  to="/sign-up" className="nav-link" exact>
              Sign Up
-             </NavLink>
+             </Link>
              </li>
           </ul>
            
