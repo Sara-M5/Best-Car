@@ -37,8 +37,10 @@ export default function Home() {
                </div>
 
                 <div className="section" id="Service">
+                <div className="service">
                   <Header title="Services" />
-                  <Services />
+                  <Services />     
+                </div>
                </div>
 
                

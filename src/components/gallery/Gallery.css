@@ -13,13 +13,15 @@
     letter-spacing: 2px;
 }
 
- 
-.btn:hover {
+ .gallery-btn {
     box-shadow: 1px 2px 2px #000;
+ }
+.btn:hover {
+    box-shadow: 1px 4px 4px #000;
 }
 .g-icon {
     border-radius: 4px;
-    background: #fde719;
-    color: #000;
+    background:#000; 
+    color: #fde719;
     margin-left: 5px;
 }

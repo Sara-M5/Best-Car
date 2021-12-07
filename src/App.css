@@ -71,10 +71,21 @@ h3 {
     color: #888888;
   }
   
+  .service {
+    margin: 200px 0 -100px 0;
+
+  }
   .footer {
     background-color: #3f4246;
     
 } 
+
+/*  WhyUs section style */
+.Icon {
+  font-size: 35px;
+  margin:0 8px 15px 0;
+  color: #fde719;
+}
 
 /*  contact section style */
   .contact {
