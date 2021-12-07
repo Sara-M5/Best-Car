@@ -1,22 +1,13 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import { HashLink as Link } from "react-router-hash-link";
 import './Navbar.css';
 
 
 
 export default function Navbar() {
-  const [navbar, setNavbar] = useState(false);
-
-  const changeBackground = () => {
-    if(window.scrollY >= 80){
-      setNavbar(true);
-    }else{
-      setNavbar(false);
-    }
-  };
-  window.addEventListener('scroll',changeBackground);
+ 
     return (
-      <nav className={navbar ? 'navbar active' : 'navbar'}>
+      <nav className="navbar navbar-expand-sm fixed-top navbar-light bg-light">
       <div className="container d-flex justify-content-between align-items-center">
         <Link className="navbar-brand navbar-logo" to="/" exact>
           <h4>Best Car</h4>
