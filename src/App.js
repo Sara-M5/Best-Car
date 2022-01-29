@@ -11,6 +11,8 @@ import TypesOfCar from './parts/typesOfCar/TypesOfCar';
 import Gallery from './components/gallery/Gallery';
 import WhyUs from './parts/whyUs/WhyUs';
 import Contact from './parts/contact/Contact';
+import Login from './views/login/Login';
+import SignUp from './views/signUp/SignUp'
 
 
 function App() {
@@ -21,7 +23,7 @@ function App() {
   
      <Switch>
        
-        <Route path='/' >
+        <Route exact path='/' >
             <Home />
         </Route>
         <Route path='/typesOfCar' >
@@ -37,6 +39,12 @@ function App() {
         </Route>
          <Route path='/Contact' >
             <Contact />
+        </Route>
+         <Route path='/Login' >
+            <Login />
+        </Route>
+        <Route path='/SignUp' >
+            <SignUp />
         </Route>
      </Switch>
      </main>

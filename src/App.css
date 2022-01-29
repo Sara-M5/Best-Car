@@ -50,6 +50,7 @@ h3 {
 
   .button:hover {
     background:#fde719 ;
+    outline: none;
   }
 /* type car section */
   .type-car {

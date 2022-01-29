@@ -30,7 +30,7 @@ export default function Navbar() {
           <ul className="navbar-nav text-center">
             <li className="nav-item active">
              
-              <Link className="nav-link" smooth to="/Home" exact>
+              <Link className="nav-link" to="/" exact>
                 Home
               </Link>
 
@@ -70,7 +70,7 @@ export default function Navbar() {
              </Link>
              </li>
              <li className="nav-item "> 
-            <Link  to="/sign-up" className="nav-link" exact>
+            <Link className="nav-link" smooth to="/SignUp" exact>
              Sign Up
              </Link>
              </li>
